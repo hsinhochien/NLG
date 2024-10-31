@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FOLDER_ID="https://drive.google.com/drive/folders/1V4zQi8o-n86IHa1J78uWeDSdsJneGICG?usp=sharing"
+FOLDER_ID="" # Replace it with the model parameters folder from your Google Cloud.
 
 # 定義下載後存放的目錄
 MODEL_DIR="./my_model_test"

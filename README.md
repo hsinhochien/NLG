@@ -14,7 +14,7 @@ Install tw_rouge <br>
 2. ```pip install transformers torch datasets tqdm scikit-learn```
 ### Steps to train the model
 1. Data Preparation <br>
-The script reads the JSON Lines data and splits it into training and validation sets.
+Ensure you have the files ```train.jsonl```, ```public.jsonl``` ready.
 2. Tokenization <br>
 The input text and labels are tokenized using the MT5 tokenizer.
 3. Model Training <br>

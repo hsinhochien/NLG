@@ -21,8 +21,7 @@ The input text and labels are tokenized using the MT5 tokenizer.
 The MT5 model is trained using the specified training arguments, including learning rate, batch size, and number of epochs.
 
 
-## generation.ipynb
-This file performs inference on ```public.jsonl``` using the model I trained and the generation strategy I chose. It also calculates the ROUGE scores.
+
 
 ## inference.py
 This file is used to perform inference on ```/path/to/input.jsonl``` using the model I trained and the generation strategy I chose.

@@ -1,8 +1,4 @@
 # Chinese News Summarization
-Install tw_rouge <br>
-```git clone https://github.com/deankuo/ADL24-HW2.git``` <br>
-```cd ADL24-HW2``` <br>
-```pip install -e tw_rouge``` <br>
 
 ## training.ipynb
 ### Prerequisite
@@ -11,17 +7,16 @@ Install tw_rouge <br>
 ```cd transformers``` <br>
 ```git checkout t5-fp16-no-nans``` <br>
 ```pip install -e .``` <br>
-2. ```pip install transformers torch datasets tqdm scikit-learn```
+2. ```pip install ckiptagger rouge torch datasets tqdm scikit-learn```
 ### Steps to train the model
 1. Data Preparation <br>
-Ensure you have the files ```train.jsonl```, ```public.jsonl``` ready.
+The script reads the JSON Lines data and splits it into training and validation sets.
 2. Tokenization <br>
 The input text and labels are tokenized using the MT5 tokenizer.
 3. Model Training <br>
 The MT5 model is trained using the specified training arguments, including learning rate, batch size, and number of epochs.
-
-
-
+4. Inference <br>
+The script performs inference using the trained model and experiments with different combinations of generation strategies.
 
 ## inference.py
 This file is used to perform inference on ```/path/to/input.jsonl``` using the model I trained and the generation strategy I chose.

@@ -57,7 +57,7 @@ def generate_predictions(batch):
         input_ids=inputs, 
         attention_mask=attention_mask, 
         max_length=64, 
-        num_beams=7
+        num_beams=6
     )
     return tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
